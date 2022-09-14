@@ -1,8 +1,8 @@
-import {useEffect} from 'react';
+// import {useEffect} from 'react';
 import { useNavigate , useParams } from 'react-router-dom';
 import {useDispatch,useSelector} from 'react-redux';
 import { add } from '../features/cartSlice'
-import {getProduct} from '../features/productSlice'
+// import {getProduct} from '../features/productSlice'
 import Navbar from './Navbar';
 import React  from 'react';
 
@@ -16,9 +16,9 @@ function Details(){
     const dispatch = useDispatch();
     const productdetail = useSelector((state)=> state.myproduct.product)
     
-    useEffect(()=>{
-        dispatch(getProduct(params.id))
-    },[productdetail])
+    // useEffect(()=>{
+    //     dispatch(getProduct(params.id))
+    // },[productdetail])
 
     const {title,image,description,price,category}= productdetail;
 
