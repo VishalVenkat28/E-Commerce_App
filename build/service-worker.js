@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Estore-react-reduxtoolkit/precache-manifest.72a4e88ebf652da50aaf107edf53e4db.js"
+  "/E-Commerce_App/precache-manifest.d9ffc657a334f7ded3f730e1e9539631.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Estore-react-reduxtoolkit/index.html", {
+workbox.routing.registerNavigationRoute("/E-Commerce_App/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
