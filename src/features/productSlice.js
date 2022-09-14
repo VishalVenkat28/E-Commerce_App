@@ -82,7 +82,7 @@ const productSlice = createSlice({
     initialState,
     reducers:{
         getProduct:(state,action)=>{          // for details page
-            state.product = state.products.find((el) => el.id == action.payload)
+            state.product = state.products.find((el) => el.id === action.payload)
         },
         sortAction:(state,action)=>{
             let sorted = state.products.sort(function(item1,item2){
@@ -149,7 +149,7 @@ const productSlice = createSlice({
             const item = action.payload;
 
            state.products =  state.products.map((product,index)=>{
-                if(product.id == item.id){
+                if(product.id === item.id){
                     return item;
                 }
                 return product;

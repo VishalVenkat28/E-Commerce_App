@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import Addproduct from './Addproduct';
-import Cart from './Cart';
+// import Addproduct from './Addproduct';
+// import Cart from './Cart';
 
 const Navbar = () => {
     const items = useSelector((state) => state.cart);
@@ -11,7 +11,7 @@ const Navbar = () => {
 
             <div className='nav'>
                 <Link className="navLink" to="/">
-                   <h2>Ecommerce 🛒</h2> 
+                   <h2>Ecommerce</h2> 
                 </Link>
                 <Link className="navLink" to="/addproduct">
                 <h4> Addproduct</h4> 

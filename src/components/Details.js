@@ -4,7 +4,7 @@ import {useDispatch,useSelector} from 'react-redux';
 import { add } from '../features/cartSlice'
 import {getProduct} from '../features/productSlice'
 import Navbar from './Navbar';
-import React, { Component }  from 'react';
+import React  from 'react';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';

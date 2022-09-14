@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import { deleteproduct, updateproduct } from "../features/productSlice";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import React, { Component }  from 'react';
+import React  from 'react';
 
 function Product(props)
 {
@@ -38,7 +38,7 @@ function Product(props)
     const [title,Settitle]= useState(item.title);
     const [price,Setprice]= useState(item.price);
     const [rating,Setrating]= useState(item.rating);
-    const [image,setImage]= useState(item.image);
+    const [image]= useState(item.image);
     
     return(
         <div key= {item.id} >
